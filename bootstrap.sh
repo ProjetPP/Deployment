@@ -14,4 +14,4 @@ git clone https://github.com/ProjetPP/PPP-WebUI.git
 cd PPP-WebUI
 $BOWER install
 cd ..
-cp webui_config.js PPP-WebUI/config.js
+cp Deployment/webui_config.js PPP-WebUI/config.js
