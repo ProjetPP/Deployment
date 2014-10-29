@@ -1,0 +1,10 @@
+{
+    "debug": false,
+    "modules": [
+        {
+            "name": "flower",
+            "url": "http://localhost:9000/flower/",
+            "coefficient": 1
+        }
+    ]
+}
