@@ -6,6 +6,7 @@ You can install everything from an unprivileged user:
 
 Here is an Apache VirtualHost you can use. (change the base path
 of the directories).
+
     <VirtualHost *:80>
             ServerAdmin progval@gmail.com
             ServerName ppp.pony.ovh
@@ -17,3 +18,5 @@ of the directories).
             </Directory>
             AssignUserId ppp ppp
     </VirtualHost>
+
+You can also use the `run.sh` script to run the python applications.
