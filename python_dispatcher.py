@@ -6,8 +6,8 @@ import example_ppp_module as flower
 class Application:
     def __init__(self):
         self.mapper = Mapper()
-        self.mapper.connect('core', '/core', app=ppp_core.app)
-        self.mapper.connect('flower', '/flower', app=flower.app)
+        self.mapper.connect('core', '/core/', app=ppp_core.app)
+        self.mapper.connect('flower', '/flower/', app=flower.app)
 
     def __call__(self, environ, start_response):
         match = self.mapper.routematch(environ=environ)
