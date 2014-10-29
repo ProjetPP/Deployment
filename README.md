@@ -29,6 +29,7 @@ of the directories).
             Allow from all
         </Directory>
         AssignUserId ppp ppp
+        Header set Access-Control-Allow-Origin "*"
     </VirtualHost>
 
 You can also use the `run.sh` script to run the python applications.
