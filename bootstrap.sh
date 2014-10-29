@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Edit this if needed
-export BOWER=$HOME/node_modules/bower/bin/bower
+BOWER=$HOME/node_modules/bower/bin/bower
 
 #################
 # Python stuff
@@ -12,6 +12,6 @@ pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-P
 # Web UI
 git clone https://github.com/ProjetPP/PPP-WebUI.git
 cd PPP-WebUI
-../$BOWER install
+$BOWER install
 cd ..
 cp webui_config.js PPP-WebUI/config.js
