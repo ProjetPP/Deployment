@@ -15,3 +15,11 @@ cd PPP-WebUI
 $BOWER install
 cd ..
 cp Deployment/webui_config.js PPP-WebUI/config.js
+
+#################
+# Wikidata
+git clone https://github.com/ProjetPP/PPP-Wikidata.git
+cd PPP-Wikidata/
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install
+cd ..

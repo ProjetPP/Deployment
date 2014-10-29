@@ -5,6 +5,11 @@
             "name": "flower",
             "url": "http://localhost:9000/flower/",
             "coefficient": 1
+        },
+        {
+            "name": "wikidata",
+            "url": "http://wikidata.ppp.pony.ovh/",
+            "coefficient": 1
         }
     ]
 }
