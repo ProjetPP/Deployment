@@ -1,8 +1,39 @@
-You can install everything from an unprivileged user:
+# PPP deployement scripts
 
-    git clone https://github.com/ProjetPP/Deployment.git
-    ./Deployment/bootstrap_bower.sh
-    ./Deployment/bootstrap.sh
+## Assumptions
+
+This repository provides script for deploying main PPP modules
+under the following conditions:
+
+* Everything is run as an unprivileged user (ie. you need root
+  access only to set up the web server)
+* Everything is installed directly in `~/`.
+* Basic tools are installed (python3, git, …)
+
+## Install dependencies
+
+```
+git clone https://github.com/ProjetPP/Deployment.git
+./Deployment/bootstrap_bower.sh
+./Deployment/bootstrap.sh
+```
+
+## Run the PPP
+
+From the `~/` directory:
+
+```
+./Deployment/run_corenlp.sh
+```
+
+From the `~/Deployment/` directory:
+
+```
+./run_python.sh
+```
+
+
+## Web server
 
 Here is an Apache VirtualHost you can use. (change the base path
 of the directories).
