@@ -2,6 +2,11 @@
     "debug": false,
     "modules": [
         {
+            "name": "nlp_classical",
+            "url": "http://localhost:9000/nlp_classical/",
+            "coefficient": 1
+        },
+        {
             "name": "flower",
             "url": "http://localhost:9000/flower/",
             "coefficient": 1

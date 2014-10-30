@@ -2,11 +2,13 @@ from routes import Mapper
 
 import ppp_core
 import example_ppp_module as flower
+import ppp_nlp_classical
 
 class Application:
     def __init__(self):
         self.mapper = Mapper()
         self.mapper.connect('core', '/core/', app=ppp_core.app)
+        self.mapper.connect('nlp_classical', '/nlp_classical/', app=ppp_nlp_classical.app)
         self.mapper.connect('flower', '/flower/', app=flower.app)
 
     def __call__(self, environ, start_response):

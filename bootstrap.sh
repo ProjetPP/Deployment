@@ -30,7 +30,7 @@ cd ..
 #################
 # CoreNLP
 echo "Installing CoreNLP"
-pip3 install --user --upgrade pexpect unidecode xmltodict jsonrpclib-pelix
+pip3 install --user --upgrade pexpect unidecode xmltodict jsonrpclib-pelix xmlrpclib
 pip3 install --user --upgrade git+https://bitbucket.org/ProgVal/corenlp-python.git
 if [ ! -f stanford-corenlp-full-2014-08-27.zip ]
 then
