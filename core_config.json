@@ -16,5 +16,8 @@
             "url": "http://wikidata.ppp.pony.ovh/",
             "coefficient": 1
         }
-    ]
+    ],
+    "recursion": {
+        "max_passes": 3
+    }
 }
