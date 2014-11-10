@@ -23,7 +23,8 @@ version of `python-requests`.
 ```
 git clone https://github.com/ProjetPP/Deployment.git
 ./Deployment/bootstrap_bower.sh
-./Deployment/bootstrap.sh
+./Deployment/bootstrap_corenlp.sh
+./Deployment/bootstrap_modules.sh
 ```
 
 ## Run the PPP
