@@ -71,5 +71,15 @@ of the directories).
         AssignUserId ppp ppp
         Header set Access-Control-Allow-Origin "*"
     </VirtualHost>
+    <VirtualHost *:80>
+        ServerName gunicorn.ppp.pony.ovh
+        ProxyPass / http://127.0.0.1:9000/
+        ProxyPassReverse / http://127.0.0.1:9000/
+        <Proxy *>
+            Order deny,allow
+            Allow from all
+        </Proxy>
+        AssignUserId ppp ppp
+    </VirtualHost>
 
 You can also use the `run.sh` script to run the python applications.
