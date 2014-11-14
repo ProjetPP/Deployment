@@ -6,7 +6,7 @@ BOWER=$HOME/node_modules/bower/bin/bower
 #################
 # Python stuff
 echo "Installing Python modules."
-pip3 install --user --upgrade routes gunicorn ppp_core nltk ppp_nlp_classical ppp_nlp_standalone
+pip3 install --user --upgrade routes gunicorn ppp_core nltk ppp_nlp_classical
 pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-Python.git
 
 ##################
