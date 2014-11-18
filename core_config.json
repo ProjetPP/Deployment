@@ -12,6 +12,11 @@
             "coefficient": 1
         },
         {
+            "name": "cas",
+            "url": "http://localhost:9000/cas/",
+            "coefficient": 1
+        },
+        {
             "name": "wikidata",
             "url": "http://wikidata.ppp.pony.ovh/",
             "coefficient": 1
