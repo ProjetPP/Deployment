@@ -17,12 +17,17 @@
             "coefficient": 1
         },
         {
+            "name": "spell_checker",
+            "url": "http://localhost:9000/spell_checker/",
+            "coefficient": 1
+        },
+        {
             "name": "wikidata",
             "url": "http://wikidata.ppp.pony.ovh/",
             "coefficient": 1
         }
     ],
     "recursion": {
-        "max_passes": 3
+        "max_passes": 4
     }
 }

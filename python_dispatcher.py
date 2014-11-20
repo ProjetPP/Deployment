@@ -14,6 +14,7 @@ class Application:
         self.mapper.connect('nlp_classical', '/nlp_classical/', app=ppp_nlp_classical.app)
         self.mapper.connect('flower', '/flower/', app=flower.app)
         self.mapper.connect('cas', '/cas/', app=ppp_cas.app)
+        self.mapper.connect('spellcheck', '/spell_checker/', app=ppp_cas.app)
         #self.mapper.connect('nlp_ml_standalone', '/nlp_ml_standalone/', app=ppp_nlp_ml_standalone.app)
 
     def __call__(self, environ, start_response):
