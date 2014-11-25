@@ -3,22 +3,22 @@
     "modules": [
         {
             "name": "nlp_classical",
-            "url": "http://localhost:9000/qp_grammatical/",
+            "url": "http://localhost:9001/qp_grammatical/",
             "coefficient": 1
         },
         {
             "name": "flower",
-            "url": "http://localhost:9000/flower/",
+            "url": "http://localhost:9002/flower/",
             "coefficient": 1
         },
         {
             "name": "cas",
-            "url": "http://localhost:9000/cas/",
+            "url": "http://localhost:9003/cas/",
             "coefficient": 1
         },
         {
             "name": "spell_checker",
-            "url": "http://localhost:9000/spell_checker/",
+            "url": "http://localhost:9004/spell_checker/",
             "coefficient": 1
         },
         {
@@ -28,6 +28,6 @@
         }
     ],
     "recursion": {
-        "max_passes": 4
+        "max_passes": 6
     }
 }

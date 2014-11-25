@@ -3,4 +3,9 @@
 cd $(dirname "${BASH_SOURCE[0]}")
 export PPP_CORE_CONFIG=core_config.json
 export PPP_NLP_CLASSICAL_CONFIG=nlp_classical_config.json
-gunicorn python_dispatcher:app -b 0.0.0.0:9000 -w 10
+export PPP_CAS_CONFIG=cas_config.json
+gunicorn ppp_core:app -b 0.0.0.0:9000 -w 10 &
+gunicorn ppp_questionparsing_grammatical:app -b 0.0.0.0:9001 -w 10 &
+gunicorn example_ppp_module:app -b 0.0.0.0:9002 -w 10 &
+gunicorn ppp_cas:app -b 0.0.0.0:9003 -w 10 &
+gunicorn ppp_spell_checker:app -b 0.0.0.0:9004 -w 10 &
