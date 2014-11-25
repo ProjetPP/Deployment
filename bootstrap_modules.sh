@@ -11,6 +11,8 @@ pip3 install --user --upgrade git+https://github.com/WojciechMula/aspell-python.
 pip3 install --user --upgrade sympy ply ppp_cas ppp_spell_checker
 pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-Python.git
 
+pip3 install --user --upgrade ppp_logger
+
 ##################
 # Web UI
 echo "Installing WebUI."

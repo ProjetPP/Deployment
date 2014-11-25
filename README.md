@@ -81,5 +81,15 @@ of the directories).
         </Proxy>
         AssignUserId ppp ppp
     </VirtualHost>
+    <VirtualHost *:80>
+        ServerName gunicorn9005.ppp.pony.ovh
+        ProxyPass / http://127.0.0.1:9005/
+        ProxyPassReverse / http://127.0.0.1:9005/
+        <Proxy *>
+            Order deny,allow
+            Allow from all
+        </Proxy>
+        AssignUserId ppp ppp
+    </VirtualHost>
 
 You can also use the `run.sh` script to run the python applications.
