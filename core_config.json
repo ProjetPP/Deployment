@@ -3,7 +3,7 @@
     "modules": [
         {
             "name": "nlp_classical",
-            "url": "http://localhost:9000/nlp_classical/",
+            "url": "http://localhost:9000/qp_grammatical/",
             "coefficient": 1
         },
         {
