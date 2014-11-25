@@ -5,6 +5,7 @@ import ppp_core
 import example_ppp_module as flower
 import ppp_questionparsing_grammatical as qp_grammatical
 import ppp_cas
+import ppp_spell_checker
 #import ppp_nlp_ml_standalone
 
 class Application:
@@ -14,7 +15,7 @@ class Application:
         self.mapper.connect('qp_grammatical', '/qp_grammatical/', app=qp_grammatical.app)
         self.mapper.connect('flower', '/flower/', app=flower.app)
         self.mapper.connect('cas', '/cas/', app=ppp_cas.app)
-        self.mapper.connect('spellcheck', '/spell_checker/', app=ppp_cas.app)
+        self.mapper.connect('spellcheck', '/spell_checker/', app=ppp_spell_checker.app)
         #self.mapper.connect('nlp_ml_standalone', '/nlp_ml_standalone/', app=ppp_nlp_ml_standalone.app)
 
     def __call__(self, environ, start_response):
