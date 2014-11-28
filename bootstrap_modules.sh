@@ -13,6 +13,23 @@ pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-P
 
 pip3 install --user --upgrade ppp_logger
 
+###################
+# QP ML standalone
+pip3 install --user --upgrade ppp_questionparsing_ml_standalone
+export PPP_ML_STANDALONE_CONFIG=qp_ml_standalone_config.json
+DATA_DIR=`/usr/bin/env python3 -c "print(__import__('ppp_questionparsing_ml_standalone.config').config.Config().data_dir)"`
+
+mkdir -p $DATA_DIR
+
+if [ ! -f $DATA_DIR/embeddings-scaled.EMBEDDING_SIZE=25.txt ]
+then
+    wget http://metaoptimize.s3.amazonaws.com/cw-embeddings-ACL2010/embeddings-scaled.EMBEDDING_SIZE=25.txt.gz -c
+    gzip -d embeddings-scaled.EMBEDDING_SIZE=25.txt.gz
+fi
+mv -v embeddings-scaled.EMBEDDING_SIZE=25.txt $DATA_DIR
+cp -v data/AnnotatedQuestions.txt $DATA_DIR
+python3 -m ppp_questionparsing_ml_standalone bootstrap
+
 ##################
 # Web UI
 echo "Installing WebUI."

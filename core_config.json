@@ -7,6 +7,11 @@
             "coefficient": 1
         },
         {
+            "name": "nlp_standalone",
+            "url": "http://localhost:9006/qp_ml_standalone/",
+            "coefficient": 1
+        },
+        {
             "name": "flower",
             "url": "http://localhost:9002/flower/",
             "coefficient": 1
