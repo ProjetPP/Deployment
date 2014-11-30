@@ -41,10 +41,13 @@ cd ..
 cp Deployment/webui_config.js PPP-WebUI/config.js
 
 #################
-# Wikidata
-echo "Installing Wikidata module."
-git clone https://github.com/ProjetPP/PPP-Wikidata.git
-cd PPP-Wikidata/
-curl -sS https://getcomposer.org/installer | php
-php composer.phar install
-cd ..
+# PHP modules
+for module in "Wikidata" "Wikipedia"
+do
+    echo "Installing $module module."
+    git clone https://github.com/ProjetPP/PPP-${module}.git
+    cd PPP-${module}/
+    curl -sS https://getcomposer.org/installer | php
+    php composer.phar install
+    cd ..
+done

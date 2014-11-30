@@ -72,6 +72,18 @@ of the directories).
         Header set Access-Control-Allow-Origin "*"
     </VirtualHost>
     <VirtualHost *:80>
+        ServerAdmin valentin.lorentz+ppp@ens-lyon.org
+        ServerName wikipedia.ppp.pony.ovh
+        DocumentRoot /home/ppp/PPP-Wikipedia/www/
+        <Directory "/home/ppp/PPP-Wikipedia/www/">
+            Options +Indexes +MultiViews +FollowSymLinks +ExecCGI
+            Order allow,deny
+            Allow from all
+        </Directory>
+        AssignUserId ppp ppp
+        Header set Access-Control-Allow-Origin "*"
+    </VirtualHost>
+    <VirtualHost *:80>
         ServerName gunicorn.ppp.pony.ovh
         ProxyPass / http://127.0.0.1:9000/
         ProxyPassReverse / http://127.0.0.1:9000/
