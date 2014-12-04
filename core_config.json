@@ -3,45 +3,51 @@
     "modules": [
         {
             "name": "nlp_classical",
-            "url": "python:ppp_questionparsing_grammatical.requesthandler.RequestHandler",
+            "url": "python:ppp_questionparsing_grammatical.requesthandler:RequestHandler",
             "coefficient": 1,
-            "whitelist": ["sentence"]
-        },
-        {
-            "name": "nlp_standalone",
-            "url": "http://localhost:9006/qp_ml_standalone/",
-            "coefficient": 1,
-            "whitelist": ["sentence"]
+            "filters": {
+                "whitelist": ["sentence"]
+            }
         },
         {
             "name": "flower",
-            "url": "python:example_ppp_module.requesthandler.RequestHandler",
+            "url": "python:example_ppp_module.requesthandler:RequestHandler",
             "coefficient": 1,
-            "whitelist": ["triple"]
+            "filters": {
+                "whitelist": ["triple"]
+            }
         },
         {
             "name": "cas",
             "url": "http://localhost:9003/cas/",
             "coefficient": 1,
-            "whitelist": ["sentence"]
+            "filters": {
+                "whitelist": ["sentence"]
+            }
         },
         {
             "name": "spell_checker",
-            "url": "python:ppp_spell_checker.requesthandler.RequestHandler",
+            "url": "python:ppp_spell_checker.requesthandler:RequestHandler",
             "coefficient": 1,
-            "whitelist": ["sentence"]
+            "filters": {
+                "whitelist": ["sentence"]
+            }
         },
         {
             "name": "wikidata",
             "url": "http://wikidata.ppp.pony.ovh/",
             "coefficient": 1,
-            "blacklist": ["sentence"]
+            "filters": {
+                "blacklist": ["sentence"]
+            }
         },
         {
             "name": "wikipedia",
             "url": "http://wikipedia.ppp.pony.ovh/",
             "coefficient": 1,
-            "whitelist": ["sentence", "triple"]
+            "filters": {
+                "whitelist": ["sentence", "triple"]
+            }
         }
     ],
     "recursion": {
