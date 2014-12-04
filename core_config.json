@@ -3,38 +3,45 @@
     "modules": [
         {
             "name": "nlp_classical",
-            "url": "http://localhost:9001/qp_grammatical/",
-            "coefficient": 1
+            "url": "python:ppp_questionparsing_grammatical.requesthandler.RequestHandler",
+            "coefficient": 1,
+            "whitelist": ["sentence"]
         },
         {
             "name": "nlp_standalone",
             "url": "http://localhost:9006/qp_ml_standalone/",
-            "coefficient": 1
+            "coefficient": 1,
+            "whitelist": ["sentence"]
         },
         {
             "name": "flower",
-            "url": "http://localhost:9002/flower/",
-            "coefficient": 1
+            "url": "python:example_ppp_module.requesthandler.RequestHandler",
+            "coefficient": 1,
+            "whitelist": ["triple"]
         },
         {
             "name": "cas",
             "url": "http://localhost:9003/cas/",
-            "coefficient": 1
+            "coefficient": 1,
+            "whitelist": ["sentence"]
         },
         {
             "name": "spell_checker",
-            "url": "http://localhost:9004/spell_checker/",
-            "coefficient": 1
+            "url": "python:ppp_spell_checker.requesthandler.RequestHandler",
+            "coefficient": 1,
+            "whitelist": ["sentence"]
         },
         {
             "name": "wikidata",
             "url": "http://wikidata.ppp.pony.ovh/",
-            "coefficient": 1
+            "coefficient": 1,
+            "blacklist": ["sentence"]
         },
         {
             "name": "wikipedia",
             "url": "http://wikipedia.ppp.pony.ovh/",
-            "coefficient": 1
+            "coefficient": 1,
+            "whitelist": ["sentence", "triple"]
         }
     ],
     "recursion": {
