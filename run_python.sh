@@ -2,7 +2,7 @@
 
 cd $(dirname "${BASH_SOURCE[0]}")
 export PPP_CORE_CONFIG=core_config.json
-export PPP_NLP_CLASSICAL_CONFIG=nlp_classical_config.json
+export PPP_QUESTIONPARSING_GRAMMATICAL_CONFIG=nlp_classical_config.json
 export PPP_CAS_CONFIG=cas_config.json
 export PPP_LOGGER_CONFIG=logger_config.json
 export PPP_ML_STANDALONE_CONFIG=qp_ml_standalone_config.json
