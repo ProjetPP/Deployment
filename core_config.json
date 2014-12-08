@@ -48,6 +48,14 @@
             "filters": {
                 "whitelist": ["sentence", "triple"]
             }
+        },
+        {
+            "name": "datamodel_notation_parser",
+            "url": "python:ppp_datamodel_notation_parser",
+            "coefficient": 1,
+            "filters": {
+                "whitelist": ["sentence"]
+            }
         }
     ],
     "recursion": {
