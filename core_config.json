@@ -51,7 +51,7 @@
         },
         {
             "name": "datamodel_notation_parser",
-            "url": "python:ppp_datamodel_notation_parser",
+            "url": "python:ppp_datamodel_notation_parser.requesthandler:RequestHandler",
             "coefficient": 1,
             "filters": {
                 "whitelist": ["sentence"]
