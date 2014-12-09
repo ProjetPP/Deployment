@@ -18,6 +18,14 @@
             }
         },
         {
+            "name": "qp_ml_standalone",
+            "url": "http://localhost:9006/qp_ml_standalone/",
+            "coefficient": 1,
+            "filters": {
+                "whitelist": ["sentence"]
+            }
+        },
+        {
             "name": "cas",
             "url": "http://localhost:9003/cas/",
             "coefficient": 1,
