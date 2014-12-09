@@ -1,4 +1,4 @@
-# PPP deployement scripts
+# PPP deployment scripts
 
 ## Assumptions
 
