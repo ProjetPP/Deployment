@@ -43,7 +43,7 @@ cp Deployment/webui_config.js PPP-WebUI/config.js
 
 #################
 # PHP modules
-for module in "Wikidata" "Wikipedia"
+for module in "Wikidata"
 do
     echo "Installing $module module."
     git clone https://github.com/ProjetPP/PPP-${module}.git

@@ -44,18 +44,7 @@
         {
             "name": "wikidata",
             "url": "http://wikidata.ppp.pony.ovh/",
-            "coefficient": 1,
-            "filters": {
-                "blacklist": ["sentence"]
-            }
-        },
-        {
-            "name": "wikipedia",
-            "url": "http://wikipedia.ppp.pony.ovh/",
-            "coefficient": 1,
-            "filters": {
-                "whitelist": ["sentence", "triple"]
-            }
+            "coefficient": 1
         },
         {
             "name": "datamodel_notation_parser",
