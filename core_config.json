@@ -22,7 +22,7 @@
             "url": "python:ppp_oeis.requesthandler:RequestHandler",
             "coefficient": 1,
             "filters": {
-                "whitelist": ["triple"]
+                "whitelist": ["triple", "sentence"]
             }
         },
         {
