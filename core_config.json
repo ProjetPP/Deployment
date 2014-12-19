@@ -51,7 +51,7 @@
         },
         {
             "name": "wikidata",
-            "url": "http://wikidata.ppp.pony.ovh/",
+            "url": "http://wikidata.backend.askplatyp.us/",
             "coefficient": 1
         },
         {

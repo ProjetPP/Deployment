@@ -50,7 +50,7 @@ of the directories).
 
     <VirtualHost *:80>
         ServerAdmin valentin.lorentz+ppp@ens-lyon.org
-        ServerName ppp.pony.ovh
+        ServerName askplatyp.us
         DocumentRoot /home/ppp/PPP-WebUI/
         <Directory "/home/ppp/PPP-WebUI/">
                 Options +Indexes +MultiViews +FollowSymLinks +ExecCGI
@@ -62,7 +62,7 @@ of the directories).
 
     <VirtualHost *:80>
         ServerAdmin valentin.lorentz+ppp@ens-lyon.org
-        ServerName wikidata.ppp.pony.ovh
+        ServerName wikidata.backend.askplatyp.us
         DocumentRoot /home/ppp/PPP-Wikidata/www/
         <Directory "/home/ppp/PPP-Wikidata/www/">
             Options +Indexes +MultiViews +FollowSymLinks +ExecCGI
@@ -73,7 +73,7 @@ of the directories).
         Header set Access-Control-Allow-Origin "*"
     </VirtualHost>
     <VirtualHost *:80>
-        ServerName gunicorn.ppp.pony.ovh
+        ServerName core.frontend.askplatyp.us
         ProxyPass / http://127.0.0.1:9000/
         ProxyPassReverse / http://127.0.0.1:9000/
         <Proxy *>
@@ -83,7 +83,7 @@ of the directories).
         AssignUserId ppp ppp
     </VirtualHost>
     <VirtualHost *:80>
-        ServerName gunicorn9005.ppp.pony.ovh
+        ServerName logger.frontend.askplatyp.us
         ProxyPass / http://127.0.0.1:9005/
         ProxyPassReverse / http://127.0.0.1:9005/
         <Proxy *>

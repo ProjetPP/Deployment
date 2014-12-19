@@ -1,4 +1,4 @@
 window.config = {
-    pppCoreUrl: 'http://gunicorn.ppp.pony.ovh/core/',
-    pppLoggerUrl: 'http://gunicorn9005.ppp.pony.ovh/'
+    pppCoreUrl: 'http://core.frontend.askplatyp.us/',
+    pppLoggerUrl: 'http://logger.frontend.askplatyp.us/'
 };
