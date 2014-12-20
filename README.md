@@ -25,7 +25,6 @@ git clone https://github.com/ProjetPP/Deployment.git
 ./Deployment/bootstrap_bower.sh
 ./Deployment/bootstrap_corenlp.sh
 ./Deployment/bootstrap_modules.sh
-./Deployment/bootstrap_icons.sh
 ```
 
 ## Run the PPP
