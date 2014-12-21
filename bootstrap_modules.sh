@@ -7,7 +7,7 @@ BOWER=$HOME/node_modules/bower/bin/bower
 # Python stuff
 echo "Installing Python modules."
 pip3 install --user --upgrade routes gunicorn ppp_core nltk ppp_questionparsing_grammatical
-pip3 install --user --upgrade ppp_datamodel_notation_parser ppp_oeis
+pip3 install --user --upgrade ppp_datamodel_notation_parser ppp_oeis ppp_oracle
 pip3 install --user --upgrade git+https://github.com/WojciechMula/aspell-python.git
 pip3 install --user --upgrade sympy ply ppp_cas ppp_spell_checker
 pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-Python.git

@@ -26,6 +26,14 @@
             }
         },
         {
+            "name": "oracle",
+            "url": "python:ppp_oracle.requesthandler:RequestHandler",
+            "coefficient": 1,
+            "filters": {
+                "whitelist": ["triple", "sentence"]
+            }
+        },
+        {
             "name": "qp_ml_standalone",
             "url": "http://localhost:9006/qp_ml_standalone/",
             "coefficient": 1,
