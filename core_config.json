@@ -50,6 +50,14 @@
             }
         },
         {
+            "name": "natural_math",
+            "url": "python:ppp_natural_math.requesthandler:RequestHandler",
+            "coefficient": 1,
+            "filters": {
+                "whitelist": ["sentence"]
+            }
+        },
+        {
             "name": "cas",
             "url": "http://localhost:9003/cas/",
             "coefficient": 1,
