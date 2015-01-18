@@ -6,17 +6,17 @@ BOWER=$HOME/node_modules/bower/bin/bower
 #################
 # Python stuff
 echo "Installing Python modules."
-pip3 install --user --upgrade routes gunicorn ppp_core nltk ppp_questionparsing_grammatical
-pip3 install --user --upgrade ppp_datamodel_notation_parser ppp_oeis ppp_oracle ppp_hal
-pip3 install --user --upgrade git+https://github.com/WojciechMula/aspell-python.git
-pip3 install --user --upgrade sympy ply ppp_cas ppp_spell_checker
-pip3 install --user --upgrade git+https://github.com/ProjetPP/ExamplePPPModule-Python.git
+pip3 install --user routes gunicorn ppp_core nltk ppp_questionparsing_grammatical
+pip3 install --user ppp_datamodel_notation_parser ppp_oeis ppp_oracle ppp_hal
+pip3 install --user git+https://github.com/WojciechMula/aspell-python.git
+pip3 install --user sympy ply ppp_cas ppp_spell_checker
+pip3 install --user git+https://github.com/ProjetPP/ExamplePPPModule-Python.git
 
-pip3 install --user --upgrade ppp_logger
+pip3 install --user ppp_logger
 
 ###################
 # QP ML standalone
-pip3 install --user --upgrade ppp_questionparsing_ml_standalone
+pip3 install --user ppp_questionparsing_ml_standalone
 cd Deployment/
 export PPP_ML_STANDALONE_CONFIG=qp_ml_standalone_config.json
 DATA_DIR=`/usr/bin/env python3 -c "print(__import__('ppp_questionparsing_ml_standalone.config').config.Config().data_dir)"`
