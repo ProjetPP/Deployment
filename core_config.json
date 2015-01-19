@@ -1,5 +1,8 @@
 {
     "debug": false,
+    "log": {
+        "level": "info"
+    },
     "modules": [
         {
             "name": "nlp_classical",
