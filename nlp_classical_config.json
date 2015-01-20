@@ -9,5 +9,5 @@
     "corenlp_servers": [
         "http://localhost:8998/",
         "http://localhost:8999/"
-    }
+    ]
 }
