@@ -10,3 +10,11 @@ echo "Extracting CoreNLP…"
 rm -rf stanford-corenlp-full-2014-08-27
 unzip stanford-corenlp-full-2014-08-27.zip
 
+if [ ! -f stanford-postagger-full-2014-08-27.zip ]
+then
+    echo "Downloading POS Tagger (long: 123MB)…"
+    wget http://nlp.stanford.edu/software/stanford-postagger-full-2014-10-26.zip
+fi
+echo "Installing POS Tagger"
+unzip stanford-postagger-full-2014-10-26.zip
+python3 -c "import nltk; nltk.download('wordnet'); nltk.download('omw')"
