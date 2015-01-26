@@ -10,7 +10,7 @@ echo "Extracting CoreNLP…"
 rm -rf stanford-corenlp-full-2014-08-27
 unzip stanford-corenlp-full-2014-08-27.zip
 
-if [ ! -f stanford-postagger-full-2014-08-27.zip ]
+if [ ! -f stanford-postagger-full-2014-10-26.zip ]
 then
     echo "Downloading POS Tagger (long: 123MB)…"
     wget http://nlp.stanford.edu/software/stanford-postagger-full-2014-10-26.zip
