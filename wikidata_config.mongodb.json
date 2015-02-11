@@ -1,0 +1,14 @@
+{
+    "backend": "mongodb",
+    "mongodb": {
+        "server":"",
+        "database":"wikibase"
+    },
+    "cache": {
+        "array": true,
+        "memcached": true
+    },
+    "options": {
+        "languages": ["en", "fr"]
+    }
+}
