@@ -71,7 +71,7 @@ of the directories).
         </Directory>
         AssignUserId ppp ppp
         Header set Access-Control-Allow-Origin "*"
-        SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.mongodb.json
+        SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.default.json
     </VirtualHost>
     <VirtualHost *:80>
         ServerName core.frontend.askplatyp.us
