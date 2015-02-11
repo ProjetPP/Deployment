@@ -4,6 +4,8 @@
     "url": "http://www.wikidata.org/w/api.php"
   },
   "cache": {
-    "array": true
+  	"lifetime": 86400,
+    "array": true,
+    "memcached": true
   }
 }
