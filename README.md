@@ -95,3 +95,22 @@ of the directories).
     </VirtualHost>
 
 You can also use the `run.sh` script to run the python applications.
+
+
+## MongoDB backend for Wikidata module
+
+Warning, having your own clone of Wikidata using MongoDB requires more than 100 Go of storage and 4 Go of RAM. Setup it may take a while.
+
+For that:
+
+1. Clone [WikibaseEntityStore](https://github.com/ProjetPP/WikibaseEntityStore).
+
+2. Install it with Composer (`php composer.phar install`) and add dependences for MongoDB (`php composer.phar require doctrine/mongodb symfony/console`).
+
+3. Download [the latest JSON dump of Wikidata](https://www.wikidata.org/wiki/Wikidata:Database_download).
+
+4. Runs the command `php entitystore import-json-dump MY_UNCOMPRESSED_JSON_DUMP PATH_TO_wikidata_config.mongodb.json` in the `WikibaseEntityStore` directory to fill the database.
+
+5. Setup Wikidata module to use your mongo DB install: replace `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.default.json` by `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.mongodb.json` in Apache config and run `php composer.phar require doctrine/mongodb` in `PPP-Wikidata` directory to install required dependences.
+
+6. It should work.
