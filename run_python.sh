@@ -9,7 +9,7 @@ export PPP_ML_STANDALONE_CONFIG=qp_ml_standalone_config.json
 export PPP_HAL_CONFIG=hal_config.json
 export PPP_FRENCHPARSER_CONFIG=frenchparser_config.json
 gunicorn ppp_core:app -b 0.0.0.0:9000 -w 1 -t 60 --preload &
-#gunicorn ppp_questionparsing_grammatical:app -b 0.0.0.0:9001 -w 4 &
+gunicorn ppp_french_parser:app -b 0.0.0.0:9001 -w 2 -t 60 --preload &
 #gunicorn example_ppp_module:app -b 0.0.0.0:9002 -w 4 &
 gunicorn ppp_cas:app -b 0.0.0.0:9003 -w 4 --preload &
 #gunicorn ppp_spell_checker:app -b 0.0.0.0:9004 -w 4 &

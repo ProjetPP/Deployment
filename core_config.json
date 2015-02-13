@@ -14,18 +14,10 @@
         },
         {
             "name": "nlp_ply_french",
-            "url": "python:ppp_french_parser.requesthandler:RequestHandler",
+            "url": "http://localhost:9006/",
             "coefficient": 1,
             "filters": {
                 "whitelist": ["sentence"]
-            }
-        },
-        {
-            "name": "flower",
-            "url": "python:example_ppp_module.requesthandler:RequestHandler",
-            "coefficient": 1,
-            "filters": {
-                "whitelist": ["triple"]
             }
         },
         {
