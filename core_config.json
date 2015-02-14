@@ -14,7 +14,7 @@
         },
         {
             "name": "nlp_ply_french",
-            "url": "http://localhost:9006/",
+            "url": "http://localhost:9001/",
             "coefficient": 1,
             "filters": {
                 "whitelist": ["sentence"]
