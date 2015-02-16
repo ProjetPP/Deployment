@@ -10,8 +10,8 @@ under the following conditions:
   dependencies)
 * Everything is installed directly in `~/`.
 * Basic tools are installed (if they are not,
-  `aptitude install python3 python3-dev git npm python3-pip curl wget php5-cli php5-curl unzip openjdk-7-jre-headless python3-numpy libaspell-dev memcached php5-memcached imagemagick librsvg2-bin openjdk-8-jre-headless`
-  should be enough; note that `openjdk-8-jre-headless` is only needed if you want the French parser to work)
+  `aptitude install python3 python3-dev git npm python3-pip curl wget php5-cli php5-curl unzip openjdk-8-jre-headless python3-numpy libaspell-dev memcached php5-memcached imagemagick librsvg2-bin`
+  should be enough)
 
 Note: `python3-requests` is broken in Debian testing at the moment I am
 writing these lines. If you see this error:
