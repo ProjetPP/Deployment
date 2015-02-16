@@ -1,14 +1,14 @@
 echo "Installing CoreNLP"
 pip3 install --user --upgrade pexpect unidecode xmltodict jsonrpclib-pelix
 pip3 install --user --upgrade git+https://bitbucket.org/ProgVal/corenlp-python.git
-if [ ! -f stanford-corenlp-full-2014-08-27.zip ]
+if [ ! -f stanford-corenlp-full-2015-01-29.zip ]
 then
     echo "Downloading CoreNLP (long: 221MB)…"
-    wget http://nlp.stanford.edu/software/stanford-corenlp-full-2014-08-27.zip
+    wget http://nlp.stanford.edu/software/stanford-corenlp-full-2015-01-29.zip
 fi
 echo "Extracting CoreNLP…"
-rm -rf stanford-corenlp-full-2014-08-27
-unzip stanford-corenlp-full-2014-08-27.zip
+rm -rf stanford-corenlp-full-2015-01-29
+unzip stanford-corenlp-full-2015-01-29.zip
 
 if [ ! -f stanford-postagger-full-2014-10-26.zip ]
 then
