@@ -1,7 +1,7 @@
 {
     "backend": "mongodb",
     "mongodb": {
-        "server":"",
+        "server":"mongodb://localhost:27027",
         "database":"wikibase"
     },
     "cache": {
