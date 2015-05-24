@@ -6,7 +6,7 @@
     "modules": [
         {
             "name": "nlp_classical",
-            "url": "python:ppp_questionparsing_grammatical.requesthandler:RequestHandler",
+            "url": "http://localhost:9002/",
             "coefficient": 1,
             "filters": {
                 "whitelist": ["sentence"]
