@@ -1,4 +1,4 @@
 window.config = {
-    pppCoreUrl: 'http://core.frontend.askplatyp.us/',
-    pppLoggerUrl: 'http://logger.frontend.askplatyp.us/'
+    pppCoreUrl: '//core.frontend.askplatyp.us/',
+    pppLoggerUrl: '//logger.frontend.askplatyp.us/'
 };
