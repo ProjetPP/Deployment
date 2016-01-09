@@ -105,6 +105,8 @@ For that:
 
 * Clone [WikibaseEntityStore](https://github.com/ProjetPP/WikibaseEntityStore) and `cd` to it.
 
+* Install MongoDB 3 or greater. It is not yet packaged in Debian, so you would have to [compile it yourself](https://docs.mongodb.org/master/tutorial/install-mongodb-on-linux/) if you use Debian.
+
 * Install Composer (`curl -sS https://getcomposer.org/installer | php`) and php5-mongo (`aptitude install php5-mongo`)
 
 * Install it with Composer (`php composer.phar install`) and add dependences for MongoDB (`php composer.phar require doctrine/mongodb symfony/console`).
