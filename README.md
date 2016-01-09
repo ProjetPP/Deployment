@@ -117,6 +117,6 @@ For that:
 
 * Setup Wikidata module to use your mongo DB install: replace `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.default.json` by `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.mongodb.json` in Apache config and run `php composer.phar require doctrine/mongodb` in `PPP-Wikidata` directory to install required dependences.
 
-* To run daily entity store updates setup a CRON task that runs the `daily-entity-store-update.sh` at around 15h UTC.
+* To run daily entity store updates setup a CRON task that runs the `daily-entity-store-update.sh` at around 3pm UTC.
 
 * It should work.
