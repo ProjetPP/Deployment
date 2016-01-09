@@ -103,14 +103,16 @@ Warning, having your own clone of Wikidata using MongoDB requires more than 100 
 
 For that:
 
-1. Clone [WikibaseEntityStore](https://github.com/ProjetPP/WikibaseEntityStore).
+* Clone [WikibaseEntityStore](https://github.com/ProjetPP/WikibaseEntityStore) and `cd` to it.
 
-2. Install it with Composer (`php composer.phar install`) and add dependences for MongoDB (`php composer.phar require doctrine/mongodb symfony/console`).
+* Install Composer (`curl -sS https://getcomposer.org/installer | php`) and php5-mongo (`aptitude install php5-mongo`)
 
-3. Download [the latest JSON dump of Wikidata](https://www.wikidata.org/wiki/Wikidata:Database_download).
+* Install it with Composer (`php composer.phar install`) and add dependences for MongoDB (`php composer.phar require doctrine/mongodb symfony/console`).
 
-4. Runs the command `php entitystore import-json-dump MY_UNCOMPRESSED_JSON_DUMP PATH_TO_wikidata_config.mongodb.json` in the `WikibaseEntityStore` directory to fill the database.
+* Download [the latest JSON dump of Wikidata](https://www.wikidata.org/wiki/Wikidata:Database_download).
 
-5. Setup Wikidata module to use your mongo DB install: replace `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.default.json` by `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.mongodb.json` in Apache config and run `php composer.phar require doctrine/mongodb` in `PPP-Wikidata` directory to install required dependences.
+* Runs the command `php entitystore import-json-dump MY_UNCOMPRESSED_JSON_DUMP PATH_TO_wikidata_config.mongodb.json` in the `WikibaseEntityStore` directory to fill the database.
 
-6. It should work.
+* Setup Wikidata module to use your mongo DB install: replace `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.default.json` by `SetEnv PPP_WIKIDATA_CONFIG /home/ppp/Deployment/wikidata_config.mongodb.json` in Apache config and run `php composer.phar require doctrine/mongodb` in `PPP-Wikidata` directory to install required dependences.
+
+* It should work.
