@@ -1,5 +1,12 @@
 #!/bin/bash
 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+if [ ! -d $JAVA_HOME ]
+then
+    export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+fi
+export PATH=$JAVA_HOME/bin:$PATH
+
 if [ ! -d CoreNLP ]
 then
     echo "Cloning and installing CoreNLP…"
