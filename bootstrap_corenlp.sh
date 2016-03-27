@@ -6,6 +6,7 @@ then
     export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 fi
 export PATH=$JAVA_HOME/bin:$PATH
+update-alternatives --set java $JAVA_HOME/jre/bin/java
 
 if [ ! -d CoreNLP ]
 then
