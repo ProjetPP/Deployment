@@ -25,10 +25,10 @@ yes | cp -l stanford-english-corenlp-*models.jar CoreNLP
 echo "All seemed to work. Hold tight while we test it on a simple example (might take some time)."
 cd CoreNLP
 export CLASSPATH="`find . -name '*.jar'`"
-java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer &
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 &
 SERVER_PID=$!
 sleep 1 # Let the server some time to start...
-wget --post-data 'the quick brown fox jumped over the lazy dog' 'localhost:9000/?properties={"annotators": "tokenize,ssplit,pos", "outputFormat": "json"}' -O -
+wget --post-data 'the quick brown fox jumped over the lazy dog' 'localhost:9001/?properties={"annotators": "tokenize,ssplit,pos", "outputFormat": "json"}' -O -
 if [ $? -ne 0 ]
 then
     echo "Something does not work…"
