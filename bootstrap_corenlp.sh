@@ -7,6 +7,14 @@ then
 fi
 export PATH=$JAVA_HOME/bin:$PATH
 
+if [ ! -f stanford-postagger-full-2014-10-26.zip ]
+then
+    echo "Downloading POS Tagger…"
+    wget http://nlp.stanford.edu/software/stanford-postagger-full-2014-10-26.zip
+fi
+echo "Installing POS Tagger"
+unzip stanford-postagger-full-2014-10-26.zip
+
 if [ ! -d CoreNLP ]
 then
     echo "Cloning and installing CoreNLP…"
