@@ -45,14 +45,6 @@
             }
         },
         {
-            "name": "qp_ml_standalone",
-            "url": "http://localhost:9006/qp_ml_standalone/",
-            "coefficient": 1,
-            "filters": {
-                "whitelist": ["sentence"]
-            }
-        },
-        {
             "name": "natural_math",
             "url": "python:ppp_natural_math.requesthandler:RequestHandler",
             "coefficient": 1,
